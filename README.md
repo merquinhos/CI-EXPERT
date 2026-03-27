@@ -3,39 +3,50 @@
 Aluno: João mercus Queiroz Farias
 
 semana 1
-Navegação e Arquivos
-ls (list): Lista os arquivos e pastas do diretório onde você está agora.
 
-cd (change directory): Usado para entrar em pastas. Exemplo: cd Documentos.
+# 🛠️ Guia de Comandos - Residência de Microeletrônica
 
-pwd (print working directory): Mostra o caminho completo da pasta onde você está (muito útil para não se perder nos diretórios do projeto).
+Resumo de comandos essenciais para o dia a dia no terminal Linux (Ubuntu 24.04), focado em desenvolvimento de hardware e automação.
 
-mkdir (make directory): Cria uma pasta nova.
+---
 
-touch: Cria um arquivo vazio ou atualiza a data de modificação de um arquivo existente.
+## 📂 Navegação e Arquivos
+| Comando | Descrição |
+| :--- | :--- |
+| `ls` | Lista os arquivos e pastas do diretório atual. |
+| `cd <pasta>` | Muda para o diretório especificado (`cd ..` volta um nível). |
+| `pwd` | Exibe o caminho completo (Path) do diretório atual. |
+| `mkdir <nome>` | Cria uma nova pasta. |
+| `touch <nome>` | Cria um arquivo vazio (ex: `touch script.tcl`). |
 
-Manipulação e Visualização
-cp (copy): Copia arquivos ou diretórios de um lugar para outro.
+---
 
-cat (concatenate): Exibe todo o conteúdo de um arquivo diretamente no terminal. É ótimo para dar aquela conferida rápida em um arquivo de texto ou log.
+## 📄 Manipulação e Visualização
+* **`cp <origem> <destino>`**: Copia arquivos ou pastas.
+* **`cat <arquivo>`**: Exibe o conteúdo do arquivo diretamente no terminal.
+* **`echo "texto" > arquivo`**: Salva um texto em um arquivo (sobrescreve).
+* **`echo "texto" >> arquivo`**: Adiciona um texto ao final de um arquivo.
 
-echo: Exibe no terminal o texto que você digitar em seguida. Também serve para salvar textos em arquivos (ex: echo "HELLO" > arquivo.txt).
+---
 
-Busca e Atalhos
-grep (global regular expression print): Filtra e busca por palavras ou padrões específicos dentro de textos ou arquivos. Como a própria imagem diz: "globally search for a regular expression and print".
+## 🔍 Busca e Atalhos
+* **`grep "padrão" <arquivo>`**: Busca por termos específicos dentro de textos.
+* **`alias apelido='comando'`**: Cria atalhos para comandos longos.
+  * *Exemplo:* `alias say_hello='$PWD/hello.sh'`
+* **`which <comando>`**: Mostra o caminho onde o executável do comando está instalado.
 
-alias: Cria um "apelido" ou atalho para um comando longo. Por exemplo, você pode criar um alias para um comando de compilação complexo que você usa sempre na Virtus.
+---
 
+## 🐙 Git & Branches
+```bash
+# Adicionar e Remover
+git add .               # Prepara todos os arquivos para o commit
+git reset               # Remove arquivos do 'add' (unstage)
 
+# Gerenciamento de Branches
+git branch -d <nome>    # Deleta uma branch local
+git checkout -b <nome>  # Cria uma nova branch e já entra nela
 
-which git
-git -v
-
-git reset //remove os add 
-git branch -d shell-script //deleta a branch
-git checkout -b shell-script  //cria e já pula
-chmod +x hello.sh  //concede permissão
-alias say_hello='$PWD/hello.sh'   //se você digitar say_hello no terminal, ele deve executar o que vem depois do sinal de igual.
-
-vcs -sverilog ../rtl/dut.sv top_tb.sv
-$ ./simv
+# Sincronização
+git pull origin main --allow-unrelated-histories  # Une histórias divergentes
+git push origin <branch>                          # Envia para o GitHub
