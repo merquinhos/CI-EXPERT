@@ -2,11 +2,10 @@
 
 Aluno: João mercus Queiroz Farias
 
-semana 1
 
 # 🛠️ Guia de Comandos - Residência de Microeletrônica
 
-Resumo de comandos essenciais para o dia a dia no terminal Linux (Ubuntu 24.04), focado em desenvolvimento de hardware e automação.
+Resumo de comandos essenciais para o dia a dia da s1
 
 ---
 
