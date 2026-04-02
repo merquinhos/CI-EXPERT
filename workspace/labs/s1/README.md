@@ -45,3 +45,34 @@ To verify the `calc4` module functionality:
 2. **Compile** the SystemVerilog files located in `rtl/` and `tb/` using your preferred EDA tool (e.g., Questa/ModelSim).
 3. **Run** the simulation to verify arithmetic operations (ADD, SUB, MULT, DIV).
 4. **Analyze** the output waveforms for timing parameters such as **Delay** and **Slew**.
+
+5. ### 📒 Quick Reference Guide (S1)
+
+#### 📂 Essential Linux Commands
+
+| Command | Description |
+| :--- | :--- |
+| `ls` | List files and directories in the current folder. |
+| `cd <dir>` | Change directory (`cd ..` to go up one level). |
+| `pwd` | Print the full path of the current working directory. |
+| `mkdir` / `touch` | Create a new folder or a new empty file. |
+| `cat` | Display file content directly in the terminal. |
+| `grep` | Search for specific patterns/strings within files. |
+| **Ctrl+R** | Reverse search: quickly find commands in your history. |
+
+---
+
+### 🧬 Git & Workflow
+
+```bash
+# Staging and Resetting
+git add .                # Stage all changes for commit
+git reset                # Unstage files
+
+# Branch Management
+git checkout -b <name>   # Create and switch to a new branch
+git branch -d <name>     # Delete a local branch
+
+# Synchronization
+git pull origin main     # Update local repository
+git push origin <branch> # Push changes to GitHub
