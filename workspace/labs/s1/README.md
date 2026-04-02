@@ -41,4 +41,3 @@ To verify the `calc4` module:
 
 * **Automation:** Upon success, the terminal will display: `"Project '<name>' successfully created inside prj/"`.
 * **Errors:** If run without arguments, it shows: `"Error: please provide the project name."`.
-* **Simulation:** The testbench will output the results of the operations and generate waveforms for timing analysis (Delay/Slew).
