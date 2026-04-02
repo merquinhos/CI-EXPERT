@@ -80,6 +80,10 @@ chmod +x scripts/gen-prj.sh
 ```
 Functionality: The script checks if a name was provided and if the directory already exists. If not, it creates the rtl, tb, and docs folders with .empty files for version control.
 
+## 📤 Expected Output
+
+* **Automation:** Upon success, the terminal will display: `"Project '<name>' successfully created inside prj/"`.
+* **Errors:** If run without arguments, it shows: `"Error: please provide the project name."`.
 ## 2. Design Verification (EDA)
 
 To verify the `calc4` module:
@@ -90,7 +94,4 @@ To verify the `calc4` module:
 
 ---
 
-## 📤 Expected Output
 
-* **Automation:** Upon success, the terminal will display: `"Project '<name>' successfully created inside prj/"`.
-* **Errors:** If run without arguments, it shows: `"Error: please provide the project name."`.
