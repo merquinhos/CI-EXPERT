@@ -81,17 +81,6 @@ The RAM supports both read and write operations controlled by the `we` (Write En
 
 ---
 
-## 🛠️ Environment & Automation
-
-### Project Generation
-To maintain consistency, the `gen-prj.sh` script is used to initialize the `rtl`, `tb`, and `docs` folders.
-
-```bash
-# How to create a new project structure in S2
-chmod +x gen-prj.sh
-./gen-prj.sh <project_name>
-```
-
  ### 📒 Quick Reference Guide (S1)
 
 #### 📂 Essential Linux Commands
