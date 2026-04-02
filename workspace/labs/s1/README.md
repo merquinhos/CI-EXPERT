@@ -46,7 +46,7 @@ To verify the `calc4` module functionality:
 3. **Run** the simulation to verify arithmetic operations (ADD, SUB, MULT, DIV).
 4. **Analyze** the output waveforms for timing parameters such as **Delay** and **Slew**.
 
-5. ### 📒 Quick Reference Guide (S1)
+ ### 📒 Quick Reference Guide (S1)
 
 #### 📂 Essential Linux Commands
 
