@@ -5,7 +5,7 @@ This repository contains the materials, scripts, and projects developed during t
 
 ---
 
-## 🚀 Exam Delivery: PROVA 01
+## 🚀 Exam 01 (S1)
 This project focuses on environment automation via **Shell Script** and Digital Design Verification (**EDA**).
 
 ### 📂 Repository Organization
@@ -46,7 +46,7 @@ To verify the `calc4` module functionality:
 3. **Run** the simulation to verify arithmetic operations (ADD, SUB, MULT, DIV).
 4. **Analyze** the output waveforms for timing parameters such as **Delay** and **Slew**.
 
-## 🚀 Exam Delivery: PROVA 02 (S2 - Memories)
+## 🚀 Exam 02 (S2)
 This project focuses on the SystemVerilog modeling of basic memory units (ROM and RAM) and the maintenance of the automated environment.
 
 ### 📂 Repository Organization (S2)
