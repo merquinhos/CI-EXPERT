@@ -24,7 +24,7 @@ To create a new project with the default structure, use the following commands:
 chmod +x scripts/gen-prj.sh
 ./scripts/gen-prj.sh <project_name>
 
-
+```
 ## 2. Design Verification (EDA)
 
 To verify the `calc4` module:
