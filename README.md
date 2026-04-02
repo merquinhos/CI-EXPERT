@@ -1,5 +1,5 @@
 # CI-EXPERT: Microelectronics Residency
-**Student:** João Mercu Queiroz Farias | **Polo:** UFCG / Softex
+**Student:** João Mercus Queiroz Farias | **Polo:** UFCG / Softex
 
 This repository contains the materials, scripts, and projects developed during the **CI Expert** residency program.
 
