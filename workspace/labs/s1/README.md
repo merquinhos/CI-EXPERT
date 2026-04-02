@@ -33,3 +33,15 @@ chmod +x scripts/gen-prj.sh
 # Run the script providing a project name
 ./scripts/gen-prj.sh <project_name>.
 ```
+* **Functionality**: The script validates if a project name was provided and checks if the directory already exists to prevent overwriting.
+* **Expected Output**: Upon success, the terminal displays: `"Project '<name>' successfully created inside prj/"`.
+* **Error Handling**: If run without arguments, it shows: `"Error: please provide the project name."`.
+
+### 2. Design Verification (EDA)
+
+To verify the `calc4` module functionality:
+
+1. **Navigate** to the `prj/hello/` directory.
+2. **Compile** the SystemVerilog files located in `rtl/` and `tb/` using your preferred EDA tool (e.g., Questa/ModelSim).
+3. **Run** the simulation to verify arithmetic operations (ADD, SUB, MULT, DIV).
+4. **Analyze** the output waveforms for timing parameters such as **Delay** and **Slew**.
