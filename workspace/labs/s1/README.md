@@ -23,3 +23,20 @@ To create a new project with the default structure, use the following commands:
 ```bash
 chmod +x scripts/gen-prj.sh
 ./scripts/gen-prj.sh <project_name>
+
+
+## 2. Design Verification (EDA)
+
+To verify the `calc4` module:
+
+1.  **Navigate** to the `prj/hello/` directory.
+2.  **Compile** the SystemVerilog files (`rtl/` and `tb/`) using your preferred EDA tool (e.g., Questa/ModelSim).
+3.  **Run** the simulation to verify the arithmetic operations (ADD, SUB, MULT, DIV).
+
+---
+
+## 📤 Expected Output
+
+* **Automation:** Upon success, the terminal will display: `"Project '<name>' successfully created inside prj/"`.
+* **Errors:** If run without arguments, it shows: `"Error: please provide the project name."`.
+* **Simulation:** The testbench will output the results of the operations and generate waveforms for timing analysis (Delay/Slew).
