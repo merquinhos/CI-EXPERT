@@ -46,6 +46,52 @@ To verify the `calc4` module functionality:
 3. **Run** the simulation to verify arithmetic operations (ADD, SUB, MULT, DIV).
 4. **Analyze** the output waveforms for timing parameters such as **Delay** and **Slew**.
 
+## 🚀 Exam Delivery: PROVA 02 (S2 - Memories)
+This project focuses on the SystemVerilog modeling of basic memory units (ROM and RAM) and the maintenance of the automated environment.
+
+### 📂 Repository Organization (S2)
+Based on the current workspace, the S2 activities are organized as follows:
+
+* **s2/scripts/**: Core directory for the second week's labs.
+    * `gen-prj.sh`: Main script for project directory generation.
+    * **prj/hello/**: Active project folder.
+        * **rtl/**: Contains the SystemVerilog memory models.
+            * `ROM.sv`: Read-Only Memory implementation.
+            * `RAM.sv`: Random Access Memory implementation.
+        * **tb/**: Testbench files for memory verification.
+        * **docs/**: Project documentation.
+
+---
+
+## 💾 Memory Implementation (Exercise)
+
+The memories were implemented using the following interface requirements:
+* **addr [3:0]**: 4-bit address bus (16 positions).
+* **din [15:0]**: 16-bit data input (RAM only).
+* **we**: Write Enable (0: Read | 1: Write).
+* **dout [15:0]**: 16-bit data output.
+
+### 1. ROM (Read-Only Memory)
+The ROM was designed to store fixed values that can only be read based on the address provided.
+
+### 2. RAM (Random Access Memory)
+The RAM supports both read and write operations controlled by the `we` (Write Enable) signal. 
+* When `we = 1`, the data at `din` is stored in the memory at the specified `addr`.
+* When `we = 0`, the memory outputs the data stored at `addr` to `dout`.
+
+---
+
+## 🛠️ Environment & Automation
+
+### Project Generation
+To maintain consistency, the `gen-prj.sh` script is used to initialize the `rtl`, `tb`, and `docs` folders.
+
+```bash
+# How to create a new project structure in S2
+chmod +x gen-prj.sh
+./gen-prj.sh <project_name>
+```
+
  ### 📒 Quick Reference Guide (S1)
 
 #### 📂 Essential Linux Commands
