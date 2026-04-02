@@ -25,6 +25,8 @@ chmod +x scripts/gen-prj.sh
 ./scripts/gen-prj.sh <project_name>
 
 ```
+Functionality: The script checks if a name was provided and if the directory already exists. If not, it creates the rtl, tb, and docs folders with .empty files for version control.
+
 ## 2. Design Verification (EDA)
 
 To verify the `calc4` module:
